@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 import org.xjosiah.mymall.mbg.model.PmsBrand;
 import org.xjosiah.mymall.mbg.model.PmsBrandExample;
 
+@Component
 public interface PmsBrandMapper {
-    int countByExample(PmsBrandExample example);
+    long countByExample(PmsBrandExample example);
 
     int deleteByExample(PmsBrandExample example);
 
